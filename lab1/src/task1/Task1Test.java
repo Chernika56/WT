@@ -4,11 +4,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Task1Test {
-
     @Test
-    void calculate() {
-        double expected = Task1.calculate(3,4);
-        double actual = 3.288;
-        assertEquals(expected,actual,0.01);
+    void test_1() {
+        double actual = Task1.calculate(3.0,4.0);
+        double expected = 3.28;
+        assertEquals(expected,actual,0.1);
+    }
+    @Test
+    void test_2(){
+        double actual= Task1.calculate(1.0,2.1);
+        double expected = 1.38;
+        assertEquals(expected,actual,0.1);
+    }
+    @Test
+    void test_3(){
+        double actual = Task1.calculate(0,0);
+        double expected = 0.5;
+        assertEquals(expected,actual,0.1);
     }
 }
