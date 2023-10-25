@@ -8,24 +8,6 @@ public class Task4 {
     };
 
     /**
-     * Checks if n is prime value
-     *
-     * @param num number to check
-     * @return true if n is prime, false otherwise
-     */
-    private static boolean isPrime(int num) {
-      if (num < 2) return false;
-      if (num <= 3) return true;
-      if (num % 2 == 0) return false;
-
-      for (int i = 5; i <= Math.sqrt(num) + 1; i += 2) {
-          if (num % i == 0) return false;
-      }
-
-      return true;
-    };
-
-    /**
      * Finds primes in the given array
      *
      * @param numbers array to find primes
@@ -41,5 +23,23 @@ public class Task4 {
         }
 
         return res;
+    };
+
+    /**
+     * Checks if n is prime value
+     *
+     * @param num number to check
+     * @return true if n is prime, false otherwise
+     */
+    private static boolean isPrime(int num) {
+      if (num < 2) return false;
+      if (num <= 3) return true;
+      if (num % 2 == 0) return false;
+
+      for (int i = 5; i <= Math.sqrt(num) + 1; i += 2) {
+          if (num % i == 0) return false;
+      }
+
+      return true;
     };
 }
