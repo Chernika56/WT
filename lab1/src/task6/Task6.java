@@ -2,7 +2,7 @@ package task6;
 
 public class Task6 {
     public static void main(String[] args) {
-        printArray(getTable(new int[]{1, 2, 3, 4, 5}));
+        printArray(getTable(new double[]{1, 2, 3, 4, 5}));
     }
 
     /**
@@ -16,9 +16,9 @@ public class Task6 {
      * @param sequence initial array
      * @return filled array
      */
-    public static int[][] getTable(int[] sequence) {
+    public static double[][] getTable(double[] sequence) {
         int length = sequence.length;
-        int[][] res = new int[length][length];
+        double[][] res = new double[length][length];
 
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
@@ -34,10 +34,10 @@ public class Task6 {
      *
      * @param array array to print
      */
-    private static void printArray(int[][] array) {
-        for (int[] rows : array) {
-            for (int elem : rows) {
-                System.out.printf("%3d", elem);
+    private static void printArray(double[][] array) {
+        for (double[] rows : array) {
+            for (double elem : rows) {
+                System.out.printf("%.1f ", elem);
             }
             System.out.println();
         }

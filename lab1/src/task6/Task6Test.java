@@ -9,15 +9,15 @@ class Task6Test {
 
     @Test
     public void test_1() {
-        int[][] actual = Task6.getTable(new int[]{});
-        int[][] expected = new int[][]{};
+        double[][] actual = Task6.getTable(new double[]{});
+        double[][] expected = new double[][]{};
         assertArrayEquals(expected, actual);
     }
 
     @Test
     public void test_2() {
-        int[][] actual = Task6.getTable(new int[]{1, 2, 3, 4, 5});
-        int[][] expected = new int[][]{
+        double[][] actual = Task6.getTable(new double[]{1, 2, 3, 4, 5});
+        double[][] expected = new double[][]{
                 {1, 2, 3, 4, 5},
                 {2, 3, 4, 5, 1},
                 {3, 4, 5, 1, 2},

@@ -2,7 +2,7 @@ package task7;
 
 public class Task7 {
     public static void main(String[] args) {
-        int[] array = new int[]{2, 6, 3, 9, 1, -3};
+        double[] array = new double[]{2, 6, 3, 9, 1, -3};
         sort(array);
         printArray(array);
     }
@@ -12,7 +12,7 @@ public class Task7 {
      *
      * @param array array to sort
      */
-    public static void sort(int[] array) {
+    public static void sort(double[] array) {
         int i = 0;
         while (i < array.length - 1) {
             if (array[i] > array[i + 1]) {
@@ -33,8 +33,8 @@ public class Task7 {
      * @param index1 index to swap
      * @param index2 index to swap
      */
-    private static void swap(int[] array, int index1, int index2) {
-        int tmp = array[index1];
+    private static void swap(double[] array, int index1, int index2) {
+        double tmp = array[index1];
         array[index1] = array[index2];
         array[index2] = tmp;
     }
@@ -44,9 +44,9 @@ public class Task7 {
      *
      * @param array array to print
      */
-    private static void printArray(int[] array) {
-        for (int elem : array) {
-            System.out.printf("%2d ", elem);
+    private static void printArray(double[] array) {
+        for (double elem : array) {
+            System.out.printf("%.1f ", elem);
         }
     }
 }
